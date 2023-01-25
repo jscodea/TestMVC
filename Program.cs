@@ -43,6 +43,8 @@ namespace TestMVC
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            app.UseRequestLocalization("LT");
+
             app.Run();
         }
     }
