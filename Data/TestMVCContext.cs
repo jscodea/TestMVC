@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using TestMVC.Models;
 
 namespace TestMVC.Data
 {
-    public class TestMVCContext : DbContext
+    public class TestMVCContext : IdentityDbContext
     {
         public TestMVCContext (DbContextOptions<TestMVCContext> options)
             : base(options)
